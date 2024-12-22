@@ -1,5 +1,5 @@
 const inStock = true
-const onSale = true
+const onSale = false
 
 // if (inStock === true) {
 // 	if (onSale === true) {
@@ -7,16 +7,22 @@ const onSale = true
 // 	}
 // }
 
-// if (inStock === true && onSale === false) {
+// if (inStock && onSale) {
 // 	alert("buy it!")
 // }
 
-const price = 100;
+// const price = 100;
 
-if (inStock === true && (onSale === true || price < 80)) {
-	alert("buy it!")
-} else {
-	alert("You don't need it")
-}
+// if (inStock && (onSale || price < 80)) {
+// 	alert("buy it!")
+// } else {
+// 	alert("You don't need it")
+// }
 
 
+
+// const buyIt = (onSale && inStock)
+
+const buyIt = (onSale && inStock)
+
+console.log(buyIt)
